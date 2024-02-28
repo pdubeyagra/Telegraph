@@ -1,0 +1,10 @@
+.HomeRight{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.button-hr{
+    padding: 10px 20px;
+    width: 90%;
+    align-self: center;
+}

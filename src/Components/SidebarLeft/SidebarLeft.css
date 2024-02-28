@@ -1,0 +1,76 @@
+.SidebarLeft{
+    background: white;
+    padding: 1rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    width: 70%;
+    height: 100%;
+}
+.Sidebar-header{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.Sidebar-header>div:nth-of-type(1){
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.Link-profile-img>img{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+}
+.Sidebar-header>div:nth-of-type(2){
+    display: flex;
+    flex-direction: column;
+}
+.Sidebar-header>div:nth-of-type(3){
+    display: flex;
+    gap: 1rem;
+    font-size: 10px;
+}
+.Sidebar-list>ul{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+}
+.Sidebar-list>ul>li{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    list-style: none;
+    font-weight: bold;
+}
+.Sidebar-dropdowns>ul{
+    margin: 0;
+    margin-top: 10px;
+    padding: 0;
+
+}
+.Sidebar-dropdowns>ul>li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+.second-bropdown{
+    margin: 0;
+    padding: 0;
+}
+.second-bropdown>li{
+    list-style: none;
+}
+.logout{
+    position: absolute;
+    bottom: 2rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+}

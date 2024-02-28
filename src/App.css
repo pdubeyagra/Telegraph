@@ -1,0 +1,63 @@
+:root{
+  --yellow: #f5c32c;
+  --orange: #fca61f;
+  --back: #242d49;
+  --gray: rgba(36, 45, 73, 0.65);
+  --hrColor: #cfcdcd;
+  --cardColor: rgba(255, 255, 255, 0.64);
+  --buttonBg: linear-gradient(98.63deg, #f9a225 0%, #f95f35 100%);
+  --inputColor: rgba(48, 52, 62, 0.07);
+  --photo: #4cb256;
+  --video: #4a4eb7;
+  --location: #ef5757;
+  --shedule: #e1ae4a;
+  --blue: rgb(37, 150, 190);
+}
+.App-D,.App-m{
+  overflow: hidden;
+  color: var(--back);
+  background: #f3f3f3;
+  padding: 1rem;
+}
+.App-m{
+  padding: 0;
+}
+.blur{
+  position: absolute;
+  width: 22rem;
+  height: 14rem;
+  border-radius: 50%;
+  background: #a6ddf0;
+  filter: blur(72px);
+}
+.button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  color: white;
+  border-radius: 0.5rem;
+  background: var(--blue);
+  transition: all 100ms ease-out;
+}
+.button:hover{
+  cursor: pointer;
+  background: transparent;
+  color: var(--blue);
+  border: 2px solid var(--blue);
+}
+.button-m{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--blue);
+  border: none;
+  outline: none;
+  color: white;
+}
+.button-m:hover{
+  cursor: pointer;
+  background: transparent;
+  color: var(--blue);
+  border: 2px solid var(--blue);
+}

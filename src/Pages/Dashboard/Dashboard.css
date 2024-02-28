@@ -1,0 +1,16 @@
+.Dashboard-d{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.Dashboard-m{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.ProfilePage-d{
+    display: grid;
+    grid-template-columns: 20rem auto 20rem;
+    gap: 1rem;
+}

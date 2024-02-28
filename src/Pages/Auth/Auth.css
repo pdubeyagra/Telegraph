@@ -1,0 +1,143 @@
+.Auth{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    gap: 4rem;
+    position: relative;
+}
+.Auth-left{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+.Auth-left>img{
+    width: 6rem;
+    height: 6rem;
+}
+.Webname{
+    display: flex;
+    flex-direction: column;
+}
+.Webname>h1{
+    font-size: 3rem;
+    color: var(--blue);
+    margin-bottom: 10px;
+}
+.Webname>h6{
+    font-size: 0.8rem;
+    align-self: center;
+    margin-top: 5px;
+}
+.infoForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    min-width: 20rem;
+}
+.infoForm>div{
+    display: flex;
+    gap: 1rem;
+    height: 2rem;
+    width: 90%;
+}
+.infoInput{
+    border: none;
+    background-color: var(--inputColor);
+    outline: none;
+    border-radius: 8px;
+    padding: 20px;
+    flex: 1;
+}
+.info-button{
+    width: 6rem;
+    height: 2rem;
+    align-self: flex-end;
+}
+.Auth-form{
+    background-color: var(--cardColor);
+    border-radius: 1rem;
+    padding: 1rem;
+}
+.Auth-form>div{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+             
+
+             /* Mobile Dom CSS */
+
+.Auth-m{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    height: 100vh;
+    justify-content: center;
+    padding: 1rem;
+}
+.Auth-m-left{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 10px;
+}
+.Auth-m-left>img{
+    width: 4rem;
+    height: 4rem;
+}
+.Webname-m{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.Webname-m>h1{
+    margin: 0;
+}
+.Webname-m>h6{
+    margin: 0;
+    font-size: 9px;
+    align-self: center;
+}
+.Auth-m-right{
+    background-color: var(--cardColor);
+    border-radius: 1rem;
+    padding: 10px;
+}
+.info-m-Form{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+}
+.info-m-Form>h3{
+    margin: 0;
+    align-self: center;
+}
+.info-m-Form>div{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+input{
+    background-color: var(--inputColor);
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding: 10px;
+    width: 90%;
+}
+.Link-h{
+    align-self: flex-end;
+    text-decoration: none;
+}
+.Link-hm{
+    align-self: flex-end;
+    text-decoration: none;
+}

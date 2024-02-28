@@ -1,0 +1,14 @@
+.Profile-r-header{
+    display: flex;
+    margin-top: 1rem;
+    justify-content: space-between;
+    align-items: center;
+}
+.Profile-r-header>.header-r>img{
+    width: 1.5rem;
+    height: 1.5rem;
+}
+.Link-c>img{
+    width: 1.5rem;
+    height: 1.5rem;
+}

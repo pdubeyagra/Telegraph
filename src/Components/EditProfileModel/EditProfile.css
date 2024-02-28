@@ -1,0 +1,52 @@
+.EditProfile{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: white;
+    border-radius: 1rem;
+    padding: 1rem;
+    width: 49rem;
+    position: absolute;
+    top: 0rem;
+    left: 21rem;
+}
+.Info-Profile{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+.EditProfile>h3{
+    margin: 0;
+    font-size: 1.5rem;
+}
+.Info-Profile-options>input{
+    width: 95%;
+}
+.first-last-name{
+    display: flex;
+    gap: 1rem;
+}
+.first-last-name>div:nth-of-type(1),
+.first-last-name>div:nth-of-type(2){
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.verify{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.verify>span{
+    font-size: 10px;
+    font-weight: 500;
+}
+.verify>input{
+    width: 5%;
+    margin: 0;
+}
+.button-save{
+    width: 6rem;
+    padding: 10px;
+    align-self: flex-end;
+}

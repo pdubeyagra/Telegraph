@@ -1,0 +1,24 @@
+.Home-m{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.Home-d{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.HomePage-d{
+    display: grid;
+    grid-template-columns: 20rem auto 20rem;
+    gap: 1rem;
+}
+.Home-chat{
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: var(--blue);
+    border-radius: 50%;
+    position: fixed;
+    bottom: 6rem;
+    right: 1rem;
+}

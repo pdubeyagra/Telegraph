@@ -51,11 +51,11 @@ const EditProfile = ({setModalOpened}) => {
                 name="emailaddress"
               />
             </div>
-            <div className="Info-Profile-options">
+            <div className="">
               <span>Password</span>
-              <input type="password" placeholder="Password" name="password" />
+              <input type="password  " placeholder="Password" name="password" />
             </div>
-            <div className="Info-Profile-options">
+            <div className="Info-Profile-options ">
               <span>Password</span>
               <input
                 type="password"

@@ -37,7 +37,7 @@ const SidebarLeft = ({ sidebarClosed }) => {
           </span>
           <span>
           {/* {followers && <FollowersCard />} */}
-            <b onClick={()=> {setFollowers(true)}}>34</b> Followers
+            <b onClick={()=> {setFollowers(!followers)}}>34</b> Followers
           </span>
         </div>
       </div>

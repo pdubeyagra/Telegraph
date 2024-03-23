@@ -73,4 +73,5 @@
     align-self: center;
     color: var(--blue);
     font-weight: bold;
+    cursor: pointer;
 }

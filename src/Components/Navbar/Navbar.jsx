@@ -8,6 +8,7 @@ import SidebarLeft from "../SidebarLeft/SidebarLeft";
 import Notification from "../../Assets/Notification.svg";
 import { Link } from "react-router-dom";
 
+
 const Navbar = ({ menuOpened, setMenuOpened }) => {
   const [windowDimension, setWindowDimension] = useState(false);
   useEffect(() => {
@@ -38,7 +39,7 @@ const Navbar = ({ menuOpened, setMenuOpened }) => {
               }}
             />
           </div>
-          {menuOpened && <SidebarLeft sidebarClosed = {setMenuOpened} /> }
+          {menuOpened && <SidebarLeft sidebarClosed={setMenuOpened} />}
           {/* < UilTimes className= /> */}
           <div className="Search Search-m ">
             <input type="text" placeholder="#Explore" />

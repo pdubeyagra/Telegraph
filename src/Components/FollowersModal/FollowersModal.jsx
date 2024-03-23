@@ -1,14 +1,14 @@
 import React from "react";
-import "./FollowersCard.css";
-import { Followers } from "../../Data/FollowersData";
+import './FollowersModal.css'
+import {Followers} from "../../Data/FollowersData";
 
-const FollowersCard = () => {
+const FollowersModal = () => {
   return (
-    <div className="FollowersCard">
-      <h3>Who is Following You</h3>
-      {Followers.map((followers, Id) => {
+    <div className="FollowersModal">
+      <h3>Suggestions</h3>
+      {Followers.map((followers, f) => {
         return (
-          <div className="followers" key={Id}>
+          <div className="morefollowers" key={ f }>
             <div>
               <img src={followers.img} alt="" className="followerImg" />
               <div className="name">
@@ -24,4 +24,4 @@ const FollowersCard = () => {
   );
 };
 
-export default FollowersCard;
+export default FollowersModal;

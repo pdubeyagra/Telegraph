@@ -5,6 +5,8 @@ import Dashboard from "./Pages/Dashboard/Dashboard";
 import Home from "./Pages/Home/Home";
 import Chat from "./Pages/Chat/Chat";
 import { Routes, Route } from "react-router-dom";
+import Setting from "./Components/Setting/Setting";
+import Notification from "./Components/Notification/Notification";
 
 function App() {
   const [windowDimension, setWindowDimension] = useState(null);
@@ -40,6 +42,8 @@ function App() {
             <Route path="/Home" element={<Home />}></Route>
             <Route path="/Profile" element={<Dashboard />}></Route>
             <Route path="/Chat" element={<Chat />}></Route>
+            <Route path="/Setting" element={ <Setting /> }></Route>
+            <Route path="/Notifications" element={ <Notification/> }></Route>
           </Routes>
         </div>
       )}

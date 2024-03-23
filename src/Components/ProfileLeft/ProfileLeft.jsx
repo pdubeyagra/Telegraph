@@ -3,7 +3,9 @@ import "./ProfileLeft.css";
 import { UilPen } from "@iconscout/react-unicons";
 import { SuggestionsData } from "../../Data/SuggestionsData";
 import EditProfile from "../EditProfileModel/EditProfile";
-import { Link } from "react-router-dom";
+import { Link } from "react-router-dom"; 
+import FollowersModal from '../../Components/FollowersModal/FollowersModal'
+
 
 const ProfileLeft = () => {
   const [windowDimension, setWindowDimension] = useState(null);
@@ -22,6 +24,7 @@ const ProfileLeft = () => {
   const isMobile = windowDimension <= 768;
 
   const [modalOpened, setModalOpened] = useState(false);
+  const [followersOpened, setFollowersOpened] =useState(false);
 
   return (
     <>
@@ -78,7 +81,8 @@ const ProfileLeft = () => {
               </div>
             );
           })}
-          <span>Show More</span>
+          <span onClick={()=> {setFollowersOpened(!followersOpened)}}>Show More</span>
+          { followersOpened && <FollowersModal setFollowersOpened={ setFollowersOpened } /> }
         </div>
       )}
     </>

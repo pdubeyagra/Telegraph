@@ -3,6 +3,7 @@ import "./Chat.css";
 import Navbar from "../../Components/Navbar/Navbar";
 import ChatLeft from "../../Components/ChatLeft/ChatLeft";
 import ChatRight from "../../Components/ChatRight/ChatRight";
+import axios from "axios";
 
 const Chat = () => {
   const [windowDimension, setWindowDimension] = useState(null);
@@ -20,14 +21,24 @@ const Chat = () => {
 
   const isMobile = windowDimension <= 768; 
 
-  // async function getData() {
-  //   let a = await fetch('http://hn.algolia.com/api/v1/search?query=html');
-  //   let data = await a.json();
-  //   console.log(data)
-  // }
-  // useEffect(() => {
-  //   getData();
-  // }, [])
+  
+  useEffect(() => {
+    const getData =async()=> {
+      try{
+        const res = await axios.get('http://hn.algolia.com/api/v1/search?query=html') 
+        // .then(res => res.json())
+        console.warn(res.data.hits);
+        if (res.status !== 200) {
+          throw new Error('Failed to fetch data');
+      }
+      }
+      
+      catch(error){
+          console.log(error)
+      }
+    }
+    getData();
+  }, [])
   
   return (
     <div className="Chat">

@@ -1,7 +1,7 @@
 .Chat-d{
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 16px;
     height: 100vh;
 }
 .Chat-body-d{
